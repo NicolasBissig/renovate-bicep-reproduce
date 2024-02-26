@@ -2,7 +2,7 @@ param appName string = 'myFunctionApp'
 param location string = 'westus2'
 param runtimeVersion string = '3'
 
-resource appServicePlan 'Microsoft.Web/serverfarms@2020-06-01' = {
+resource appServicePlan 'Microsoft.Web/serverfarms@2023-01-01' = {
   name: '${appName}-plan'
   location: location
   sku: {
